@@ -1,0 +1,34 @@
+*{
+	clear: both;
+}
+
+.div_footer{
+	
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.footerLogo > .sns{
+    width: 80px;
+    display: flex;
+    padding-top: 50px;
+}
+
+.footerLogo > .sns > img{
+    width: 60px;
+    height: 60px;
+}
+
+.footerLogo > .sns > img:first-child {
+    margin-right: 50px;
+    margin-left: -60px;
+}
+
+.footerLogo > .company{
+    padding-top: 30px;
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-family: 'Cafe24Oneprettynight';
+}
+

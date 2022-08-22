@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar > .container > .navbar-brand  {
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 25px;
+}
+
+.dropdown{
+	 list-style:none;
+}
+
+#logout{
+	margin-left : 8px;
+}

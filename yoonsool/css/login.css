@@ -1,0 +1,210 @@
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+font-family: 'HallymMjo-Regular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+}
+
+.login_form{
+    position: relative;
+    top: 35%;
+    width: 400px;
+}
+
+.login_form > h1{
+    color: rgb(56, 56, 56);
+    font-family: '국립박물관문화재단클래식B';
+}
+
+.int-area{
+    width: 400px;
+}
+
+.int-area > label{
+    font-family: 'HallymMjo-Regular';
+}
+
+.int-area input{
+    width: 99%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+}
+
+.int-area input:focus{
+    outline: none;
+}
+
+.int-area > label{
+    font-size: 18px;
+    padding-top: 30px;
+    color: rgb(56, 56, 56);
+}
+
+.login_form label[for='memId']{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.login_form label[for='memPw']{
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+.btn-area{
+    position: relative; 
+    text-align: center; 
+    margin-top: 100px;
+}
+
+button{
+background: 0 none; 
+border: 0 none;}
+
+.buttons{
+position: relative; 
+text-align: center; 
+margin-top: 40px;}
+
+.buttons button{
+overflow: hidden; 
+position: relative; 
+display: inline-block; 
+vertical-align: top; 
+width: 200px; 
+height: 60px; 
+line-height: 60px; 
+border: 1px solid white; 
+transition: all 0.5s;
+font-family: '국립박물관문화재단클래식B';
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+}
+
+/* 영역채우기 + 글씨 키우기 효과 */
+
+
+.buttons button:hover{
+font-size: 25px;
+color: rgb(56, 56, 56);
+}  /* 글씨 커지기 */
+
+
+.buttons button:before{
+content: ""; 
+z-index: -1; 
+position: absolute; 
+background: rgb(218, 214, 206); 
+transition: all 2s;}
+
+.buttons .button1:before{
+left: 0; 
+top: 0; 
+width: 100%; 
+height: 0; 
+border-bottom-left-radius: 50%; 
+border-bottom-right-radius: 50%;}
+
+.buttons .button1:hover:before{
+height: 200%;
+}
+
+/* 영역 채우기 효과 e */    
+
+.caption_ul > li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.caption_ul > li > a{
+    font-family: 'HallymMjo-Regular';
+}
+
+.caption_ul{
+    display: flex;
+    margin-top: 30px;
+}
+
+.caption a{
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+}
+
+body{
+    background: url(../images/loginmain/login.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.int-area input[name='memId']:focus + label{
+    top : 45px;
+    font-size: 13px;
+    color: black;
+}
+
+.int-area input[name='memPw']:focus + label{
+    top : 125px;
+    font-size: 13px;
+    color: black;
+}
+
+.int-area label{
+    transition: all .5s ease;   
+}
+
+.int-area input[name='memId']:valid + label{
+    top : 60px;
+    font-size: 13px;
+}
+
+.int-area input[name='memPw']:valid + label{
+    top : 130px;
+    font-size: 13px;
+}
+
+.login_form{
+    position: fixed;
+    left : calc( 50% - 200px);
+}
+
+body .login_form .int-area{
+    background-color: transparent !important;
+}
